@@ -7,14 +7,17 @@
 
 function findLargestElement(numbers) {
 
-    let larger = numbers[0];
+    // assuming the first number in array is largest
+    let largest = numbers[0];
 
+    // iterating through each element in array
     for(let i=0; i< numbers.length; i++){
+        // if the current num is largest replace it by largest
         if(numbers[i] > larger){
-            larger = numbers[i];
+            largest = numbers[i];
         }
     }
-    return larger;
+    return largest;
 }
 
 module.exports = findLargestElement;
