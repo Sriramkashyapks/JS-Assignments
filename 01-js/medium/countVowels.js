@@ -6,10 +6,13 @@
 */
 
 function countVowels(str) {
-    // Your code here
+    // since it is mentioned above its best to convert the strings to either upper case or lower case
     string = str.toLowerCase();
+  // assuming count intially as 0
     let count = 0;
     for(let i=0; i< string.length; i++){
+      // vowels = 'a', 'e', 'i', 'o', 'u' 
+      // if element is equal to vowel then count is incremented by 1
       if(string[i] == 'a'  || string[i] == 'e'  || string[i] == 'i'  || string[i] == 'o'  || string[i] == 'u'){
         count = count + 1;
       }
